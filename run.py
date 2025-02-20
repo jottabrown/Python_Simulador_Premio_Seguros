@@ -1,3 +1,10 @@
+#---------------------------------------------------------------------------------------
+# Author: Jean Alves
+# Position: Systems Analyst | Software Engineer | Machine Learning Engineer
+# Email: jeancleber.alves@hotmail.com
+# LinkedIn: https://www.linkedin.com/in/jean-alves-6671a7105/
+#---------------------------------------------------------------------------------------
+
 from fastapi.testclient import TestClient
 from main import app
 
