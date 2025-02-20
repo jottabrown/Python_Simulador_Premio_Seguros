@@ -6,7 +6,7 @@
 #---------------------------------------------------------------------------------------
 
 from fastapi.testclient import TestClient
-from main import app
+from app.main import app
 
 client = TestClient(app)
 
@@ -23,7 +23,7 @@ def test_calculate_premium():
     print(f"Response Data: {response.json()}")
     assert response.status_code == 200
     data = response.json()
-    assert "calculated_premium" in data
+    assert "final_premium" in data
 
 if __name__ == "__main__":
     test_calculate_premium()

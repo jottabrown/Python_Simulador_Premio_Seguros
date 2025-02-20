@@ -6,6 +6,24 @@ The **Car Insurance Premium Simulator** is a backend service designed to calcula
 
 This project ensures users receive accurate and configurable insurance premium calculations, making it easy to adjust rates or configurations without modifying the code.
 
+## Project Structure
+
+CarInsurancePremiumSimulator/
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py                # Application entry point
+│   ├── core/                  # Core domain logic (e.g., services, models)
+│   ├── interfaces/            # API interfaces
+│   │   ├── api.py             # FastAPI endpoints
+│   ├── tests/                 # Test cases for the service
+│   └── shared/                # Shared utilities or components
+├── requirements.txt           # Dependencies
+|__ run.py                     # python for test the api
+└── README.md                  # Project documentation
+
+
+
 ## Core Features
 
 1. **Dynamic Rate Calculation**
