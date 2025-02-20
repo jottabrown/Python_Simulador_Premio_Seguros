@@ -8,20 +8,15 @@ This project ensures users receive accurate and configurable insurance premium c
 
 ## Project Structure
 
-CarInsurancePremiumSimulator/
-│
-├── app/
-│   ├── __init__.py
-│   ├── main.py                # Application entry point
-│   ├── core/                  # Core domain logic (e.g., services, models)
-│   ├── interfaces/            # API interfaces
-│   │   ├── api.py             # FastAPI endpoints
-│   ├── tests/                 # Test cases for the service
-│   └── shared/                # Shared utilities or components
-├── requirements.txt           # Dependencies
-|__ run.py                     # python for test the api
-└── README.md                  # Project documentation
 
+- **app/**: Contains the main application logic, including domain logic, interfaces (API), and tests.
+- **core/**: Core business logic, services, and models.
+- **interfaces/api.py**: FastAPI endpoints for the service.
+- **tests/**: Unit tests for the service.
+- **shared/**: Shared utilities or components across the application.
+- **requirements.txt**: Lists the dependencies for the project.
+- **run.py**: Python script to test the FastAPI API.
+- **dockerfile**: Docker configuration file.
 
 
 ## Core Features
