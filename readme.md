@@ -71,7 +71,7 @@ The output will return the following details:
 ## Running Tests
 To run the tests, execute the following: pytest
 
-##Running the Service
+## Running the Service
 To run the service locally:
 1. python main.py
 2. python run.py
