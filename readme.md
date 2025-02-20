@@ -8,7 +8,6 @@ This project ensures users receive accurate and configurable insurance premium c
 
 ## Project Structure
 
-
 - **app/**: Contains the main application logic, including domain logic, interfaces (API), and tests.
 - **core/**: Core business logic, services, and models.
 - **interfaces/api.py**: FastAPI endpoints for the service.
@@ -17,7 +16,6 @@ This project ensures users receive accurate and configurable insurance premium c
 - **requirements.txt**: Lists the dependencies for the project.
 - **run.py**: Python script to test the FastAPI API.
 - **dockerfile**: Docker configuration file.
-
 
 ## Core Features
 
@@ -65,7 +63,6 @@ The output will return the following details:
 
 1. Clone the repository:
 
-   ```bash
    git clone https://github.com/jottabrown/Python_Simulador_Premio_Seguros.git
 
 2. Navigate to the project directory:
@@ -82,12 +79,28 @@ The output will return the following details:
    pip install -r requirements.txt
 
 ## Running Tests
-To run the tests, execute the following: pytest
+To run the tests, execute the following: 
+   pytest
 
 ## Running the Service
-To run the service locally:
-1. python main.py
-2. python run.py
+
+**Option 1: Run Locally**
+
+1. Execute the following command :
+      python main.py
+2. Alternatively, run the service using :
+      python run.py
+
+**Option 2: Running with Docker**
+1. Build the Docker image: 
+   docker build -t car-insurance-premium-simulator .
+2. Run the Docker container:
+   docker run -d -p 8000:8000 car-insurance-premium-simulator
+
+   The service will now be accessible at http://localhost:8000.
+
+
+
 
 ## Author
 
